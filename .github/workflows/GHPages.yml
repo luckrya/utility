@@ -1,0 +1,57 @@
+name: GitHub Pages
+
+on:
+  workflow_dispatch: null
+  push:
+    paths:
+      - "docs/**"
+    branches:
+      - main
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deployDocs:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Set node version to 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: pnpm
+
+      - name: Install Packages
+        run: pnpm install
+
+      - name: Build docs
+        run: pnpm run docs:build
+
+      - name: Setup Github Pages
+        uses: actions/configure-pages@v1
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./docs/.vitepress/dist
+
+      - name: Deploy to Github Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
