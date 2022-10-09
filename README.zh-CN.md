@@ -1,4 +1,4 @@
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
 <p align="center">
   <img width="30%" height="30%"  src="./docs/public/logo.png" alt="Logo" />
@@ -6,7 +6,7 @@ English | [简体中文](./README.zh-CN.md)
 
 <h1 align="center" >@luckrya/utility</h1>
 
-<p align="center">A practical library of JavaScript tool functions extracted and summarized at work</p>
+<p align="center">一个实用的 JavaScript 工具函数库，在工作中提取和总结</p>
 
 <p align="center">
     <img src="https://img.shields.io/npm/v/@luckrya/utility" alt="NPM Version" />
@@ -16,21 +16,21 @@ English | [简体中文](./README.zh-CN.md)
     <img src="https://img.shields.io/bundlephobia/minzip/@luckrya/utility" alt="npm bundle size (scoped)" >
 </p>
 
-## Installing
+## 安装
 
 ```sh
 $ pnpm add @luckrya/utility
 ```
 
-## Features
+## 功能特性
 
-- 💄 Written and tested using TypeScript, which means you won't have any problems with custom types.
-- 🫂 Can be used for JavaScript applications on both client (web browser) and server (eg node.js).
-- 🍇 Contains more than 30 functions that handle different aspects of the problem.（Constantly Updating!）
-- 🥊 High test coverage
-- 🧩 Support for building smaller products
+- 💄 使用 TypeScript 编写和测试，这意味着自定义类型不会有任何问题。
+- 🫂 可用于客户端（Web 浏览器）和服务器（例如 node.js）上的 JavaScript 应用程序。
+- 🍇 包含 30 多个处理不同方面问题的函数。（不断更新中！）
+- 🥊 高测试覆盖率
+- 🧩 支持构建更小的产物
 
-## Usage
+## 使用
 
 ```js
 // ESM / Typescript
@@ -40,8 +40,6 @@ import { isBoolean } from "@luckrya/utility";
 const { isBoolean } = require("@luckrya/utility");
 ```
 
-## Documentation
+## 文档
 
-The documentation of this package is hosted at https://luckrya.github.io/utility/en/
-
-<!-- 123 -->
+该软件包的文档托管在 https://luckrya.github.io/utility/en/
