@@ -101,6 +101,46 @@ export default defineConfig({
               text: "isPureObject",
               link: "/en/apis/data-type-judgment/isPureObject",
             },
+            {
+              text: "isIE",
+              link: "/en/apis/environment/isIE",
+            },
+            {
+              text: "isEdge",
+              link: "/en/apis/environment/isEdge",
+            },
+            {
+              text: "isFirefox",
+              link: "/en/apis/environment/isFirefox",
+            },
+            {
+              text: "isChrome",
+              link: "/en/apis/environment/isChrome",
+            },
+            {
+              text: "isSafari",
+              link: "/en/apis/environment/isSafari",
+            },
+            {
+              text: "isAndroid",
+              link: "/en/apis/environment/isAndroid",
+            },
+            {
+              text: "isIOS",
+              link: "/en/apis/environment/isIOS",
+            },
+            {
+              text: "isLinux",
+              link: "/en/apis/environment/isLinux",
+            },
+            {
+              text: "isMac",
+              link: "/en/apis/environment/isMac",
+            },
+            {
+              text: "isWindows",
+              link: "/en/apis/environment/isWindows",
+            },
           ],
         },
       ],
@@ -164,6 +204,46 @@ export default defineConfig({
             {
               text: "isPureObject",
               link: "/apis/data-type-judgment/isPureObject",
+            },
+            {
+              text: "isIE",
+              link: "/apis/environment/isIE",
+            },
+            {
+              text: "isEdge",
+              link: "/apis/environment/isEdge",
+            },
+            {
+              text: "isFirefox",
+              link: "/apis/environment/isFirefox",
+            },
+            {
+              text: "isChrome",
+              link: "/apis/environment/isChrome",
+            },
+            {
+              text: "isSafari",
+              link: "/apis/environment/isSafari",
+            },
+            {
+              text: "isAndroid",
+              link: "/apis/environment/isAndroid",
+            },
+            {
+              text: "isIOS",
+              link: "/apis/environment/isIOS",
+            },
+            {
+              text: "isLinux",
+              link: "/apis/environment/isLinux",
+            },
+            {
+              text: "isMac",
+              link: "/apis/environment/isMac",
+            },
+            {
+              text: "isWindows",
+              link: "/apis/environment/isWindows",
             },
           ],
         },
