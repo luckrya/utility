@@ -1,6 +1,6 @@
 {
   "name": "@luckrya/utility",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A practical library of JavaScript tool functions extracted and summarized at work",
   "main": "./dist/utility.umd.min.js",
   "module": "./dist/utility.esm.min.js",
@@ -16,11 +16,11 @@
     "types"
   ],
   "scripts": {
-    "clean": "rm -rf dist types",
-    "type:check": "tsc --noEmit",
     "dev": "rollup -c -w",
     "test": "jest",
-    "build": "npm run clean && tsc --emitDeclarationOnly && rollup -c",
+    "build": "rollup -c",
+    "type:check": "tsc --noEmit",
+    "type:dts": "tsc --emitDeclarationOnly",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs"
