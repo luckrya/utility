@@ -1,5 +1,5 @@
 // 类型判断
-import { DataTypeString } from "./enum";
+import { DataTypeString } from "./enumeration";
 
 ////// 空类型 //////
 export const isUndefined = (value: unknown): value is undefined => {

@@ -11,6 +11,6 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "types": ["jest"] // , "node"
+    "types": ["node", "jest"]
   }
 }
