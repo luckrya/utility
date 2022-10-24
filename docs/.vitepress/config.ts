@@ -21,8 +21,8 @@ export default defineConfig({
   },
   themeConfig: {
     logo: {
-      dark: "/logo-dark.png",
-      light: "/logo.png",
+      dark: "/utility/logo-dark.png",
+      light: "/utility/logo.png",
     },
 
     localeLinks: {
